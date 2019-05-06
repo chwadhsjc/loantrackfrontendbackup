@@ -1,0 +1,44 @@
+
+
+<br>
+<br>
+
+<div class="col-md-6">
+  <h2 style="text-align:center"> User list with Details</h2>
+  
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden"></th>
+      
+      <th>Name</th>
+      <th>email</th>
+      <th>password</th>
+      <th>confirmPassword</th>
+      <th>gender</th>
+      <th>dob</th>
+      <th>mobile</th>
+      <th>Address</th>
+    </tr>
+  </thead>
+    <tbody>
+    <tr *ngFor="let user of users">
+      <td class="hidden"> </td>
+      <td>{{user.name}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.password}}</td>
+      <td>{{user.confirm_password}}</td>
+      <td>{{user.gender}}</td>
+      <td>{{user.dob}}</td>
+      <td>{{user.mobile}}</td>
+      <td>{{user.address}}</td>
+      <td><button class="btn btn-primary" (click)="deleteUser(user)"> Delete User</button></td>
+      
+    </tr>
+    </tbody>
+  </table>
+  
+  </div>
+
+  <br>
+  <br>

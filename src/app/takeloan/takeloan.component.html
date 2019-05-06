@@ -1,0 +1,36 @@
+<body style="padding-top: 4rem;">
+  <div class="container">
+    <div class="row" style="padding: 5%;">
+      <div class="col-md-2 bg-pattern" style="padding: 10%;"></div>
+      <div class="col-md-6">
+        <h2>Take Loan/Repay</h2>
+        <form action="">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
+              </div>
+              
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="amounttaken">Amount Taken:</label>
+            <input type="text" class="form-control" id="amounttaken" placeholder="amounttaken" name="amounttaken">
+          </div>
+
+          <div class="form-group">
+            <label for="amountpaid">Amount Paid:</label>
+            <input type="text" class="form-control" id="amountpaid" placeholder="amountpaid" name="amountpaid">
+          </div>
+          <div class="form-group">
+            <label for="description">Description:</label>
+            <input type="text" class="form-control" id="description" placeholder="description" name="description">
+          </div>
+          
+          <button class="btn btn-success" (click)="createUser()">Submit</button> 
+        </form>
+      </div>
+    </div>
+  </div>
+</body>

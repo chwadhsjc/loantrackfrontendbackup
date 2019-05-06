@@ -1,0 +1,30 @@
+<body style="padding-top: 4rem;">
+  <div class="container">
+    <div class="row" style="padding: 5%;">
+      <div class="col-md-2 bg-pattern" style="padding: 10%;"></div>
+      <div class="col-md-6">
+    <h2>Login</h2>
+    <form action="">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      
+     
+      <a class="nav-link" routerLink="/forgotpassword" routerLinkActive="active" >Forgot Password?</a>
+      <p>Not an Existing User?<a class="nav-link" routerLink="/register" routerLinkActive="active" >Register!</a> </p>
+      
+    </form>
+                </div>
+            </div>
+  </div>
+  <a routerLink="/loan" routerLinkActive="active">Submit</a>
+  <br>
+  <br>
+  <a routerLink="/adminportal" routerLinkActive="active">Submit</a>
+  </body>
